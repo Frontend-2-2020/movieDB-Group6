@@ -1,5 +1,5 @@
 const naam = "Tim";
 
-export function initTim(){
+export function initOverview(){
     console.log(naam);
 }
