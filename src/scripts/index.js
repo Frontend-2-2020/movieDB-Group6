@@ -1,13 +1,21 @@
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/index.scss';
-import './parameters.js';
-import { initTim, initOverview } from './detail';
+import { initDetail } from './detail';
+import { initOverview } from './overview';
 
-console.log(API_key);
+import queryString  from 'query-string';
+import { API_key } from './parameters';
+import { format } from 'url';
+import Axios from 'axios';
 
-const number = Math.random();
-if(number > 0.5){
+// console.log(API_key);
+
+const parsed = queryString.parse(location.search);
+console.log(parsed);
+
+
+if(parsed.movie){
+    initDetail(API_key);
+}else{
     initOverview();
-    
 }

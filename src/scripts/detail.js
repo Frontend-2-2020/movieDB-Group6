@@ -1,5 +1,5 @@
-const naam = "Tim";
+const naam = "Benjamin";
 
-export function initOverview(){
-    console.log(naam);
+export function initDetail(API_key){
+    console.log(API_key);
 }
