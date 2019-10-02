@@ -13,7 +13,7 @@ export function initOverview(){
             var posterURL =  URL_image + "w342" + movieObject.poster_path;
         overviewdiv.innerHTML +=
             `
-                <div class="col-sm">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="card" style="width: 18rem;">
                         <img src=${posterURL} class="card-img-top" alt="...">
                         <div class="card-body">
